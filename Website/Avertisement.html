@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Submit Advertisement</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="top-bar">
+    <h1>Submit Advertisement</h1>
+    <p id="priceInfo"></p> <!-- Element to display the price and rate -->
+  </div>
+  <form id="advertisementForm">
+    <label for="adTitle">Advertisement Title:</label>
+    <input type="text" id="adTitle" name="adTitle" required><br>
+    <label for="adDescription">Advertisement Description:</label>
+    <textarea id="adDescription" name="adDescription" required></textarea><br>
+    <label for="adImage">Advertisement Image:</label>
+    <input type="file" id="adImage" name="adImage" accept="image/*" required><br>
+    <img id="imagePreview" src="" alt="Image Preview" style="display: none;"><br>
+    <label for="adPrice">Advertisement Price (in NCR):</label>
+    <input type="number" id="adPrice" name="adPrice" required><br>
+    <button type="button" id="submitPayment">Submit Payment</button>
+  </form>
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.5.1/dist/web3.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
