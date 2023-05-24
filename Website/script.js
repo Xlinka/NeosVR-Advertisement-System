@@ -86,4 +86,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
   
-  
+  fetch('https://api.coingecko.com/api/v3/simple/price?ids=neos-credits&vs_currencies=usd')
+  .then(response => response.json())
+  .then(data => {
+    if (data['neos-credits']) {
+      const price = data['neos-credits'].usd;
+      const ncrNeeded = 1 / price; // calculate how much NCR is needed for a $1 ad per day
+      document.getElementById('priceInfo').innerText = `Current NCR price: $${price.toFixed(2)} | NCR needed for a ad per day: ${ncrNeeded.toFixed(2)}`;
+    } else {
+      console.log('No data for NCR');
+    }
+  })
+  .catch(error => console.error('Error:', error));

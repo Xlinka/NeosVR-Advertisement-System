@@ -73,11 +73,25 @@ body {
   }
 
   #top-bar {
-  /* ... existing styles ... */
   justify-content: space-between; /* align items to the start and end of the bar */
   }
 
+
   #priceInfo {
-    color: #f0f0f0;
-    margin: 0;
+    color: #ffffff;
+    text-align: center; /* center the text */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(249, 168, 37, 0.5);
+    margin-left: 10px;
   }
+
+  #conversionInfoBox {
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  
