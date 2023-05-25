@@ -51,7 +51,6 @@ input, textarea {
 
 button {
   display: block;
-  margin-top: 20px;
   padding: 10px 20px;
   border: none;
   background: linear-gradient(90deg, #f9a825, #f9c044);
@@ -99,8 +98,7 @@ img#imagePreview {
   align-items: center;
 }
 
-#loginButton,
-#registerButton {
+#top-bar button {
   margin-left: 10px;
   padding: 10px 20px;
   border: none;
@@ -108,7 +106,7 @@ img#imagePreview {
   color: #fff;
   cursor: pointer;
   border-radius: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 6px rgba(128, 0, 0, .5);
   transition: background-color 0.3s;
 }
 
