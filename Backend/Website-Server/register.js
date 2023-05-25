@@ -12,10 +12,6 @@ router.post('/', (req, res) => {
     return res.status(400).json({ error: 'All fields are required.' });
   }
 
-  if (password !== confirmPassword) {
-    return res.status(400).json({ error: 'Passwords do not match.' });
-  }
-
   const query = 'SELECT id FROM users WHERE username = ? OR email = ? LIMIT 1';
   db.get(query, [username, email], (err, row) => {
     if (err) {

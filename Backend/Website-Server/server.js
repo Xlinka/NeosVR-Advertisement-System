@@ -1,9 +1,16 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const app = express();
 
-const register = require('./register');
+// Middleware
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
-app.use('/register', register);
+// Import the registration script
+const registerRouter = require('./register');
+
+// Mount the registration router
+app.use('/register', registerRouter);
 
 
 // Start the server
