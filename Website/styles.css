@@ -160,3 +160,66 @@ img#imagePreview {
 .rounded-button {
   border-radius: 5px;
 }
+
+
+/* Position the footer at the bottom of the page */
+footer#bottomBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Style the contact button in the footer */
+footer#bottomBar nav#bottomBarButtons {
+  margin-bottom: 10px;
+}
+
+footer#bottomBar nav#bottomBarButtons a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+footer#bottomBar nav#bottomBarButtons a:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #1a1a1a;
+}
+
+/* Dark theme for footer text */
+footer#bottomBar p {
+  color: #fff;
+}
+
+/* Web3 aesthetics */
+footer#bottomBar nav#bottomBarButtons a {
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+}
+
+footer#bottomBar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+footer#bottomBar p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+footer#bottomBar a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+footer#bottomBar a:hover {
+  color: rgba(255, 255, 255, 1);
+}
