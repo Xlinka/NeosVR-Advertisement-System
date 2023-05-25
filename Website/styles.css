@@ -1,12 +1,13 @@
-body {
+html, body {
   background-color: #1a1a1a;
   color: #f0f0f0;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
-#top-bar {
+#topBar {
   background: linear-gradient(90deg, #f9a825, #f9c044);
   height: fit-content;
   min-height: 60px;
@@ -17,7 +18,7 @@ body {
   box-shadow: 0px 0px 10px rgba(249, 168, 37, 0.5);
 }
 
-#top-bar h1 {
+#topBar h1 {
   color: #1a1a1a;
   margin: 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -38,7 +39,8 @@ label {
 }
 
 input, textarea {
-  width: calc(100% - 20px); /* subtract padding */
+  box-sizing: border-box;
+  width: 100%;
   padding: 10px;
   margin-top: 5px;
   border: none;
@@ -65,7 +67,8 @@ button:hover {
 }
 
 img#imagePreview {
-  max-width: calc(100% - 40px); /* subtract padding */
+  box-sizing: border-box;
+  max-width: 100%;
   height: auto;
   display: block;
   margin-top: 20px;
@@ -93,12 +96,12 @@ img#imagePreview {
 
 /* Additional styles for the login and register buttons */
 
-#loginRegisterButtons {
+#topBarButtons {
   display: flex;
   align-items: center;
 }
 
-#top-bar button {
+#topBar button {
   margin-left: 10px;
   padding: 10px 20px;
   border: none;
@@ -110,7 +113,6 @@ img#imagePreview {
   transition: background-color 0.3s;
 }
 
-#loginButton:hover,
-#registerButton:hover {
+#topBar button:hover {
   background: #555;
 }
