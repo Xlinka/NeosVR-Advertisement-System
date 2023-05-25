@@ -128,14 +128,14 @@ img#imagePreview {
 }
 
 #heroHeading {
-  color: #f9a825;
+  color: var(--theme-color-shade);
 }
 
 .cta-button {
   display: inline-block;
   padding: 10px 20px;
   border: none;
-  background: #f9a825;
+  background: var(--theme-color-shade);
   color: #1a1a1a;
   cursor: pointer;
   border-radius: 5px;
@@ -149,7 +149,7 @@ img#imagePreview {
 }
 
 #contactHeading {
-  color: #f9a825;
+  color: var(--theme-color-shade);
   margin-top: 0;
 }
 
