@@ -116,3 +116,48 @@ img#imagePreview {
 #topBar button:hover {
   background: #555;
 }
+
+
+
+
+
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#heroHeading {
+  color: #f9a825;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  background: #f9a825;
+  color: #1a1a1a;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(249, 168, 37, 0.5);
+  transition: background-color 0.3s;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.cta-button:hover {
+  background: #f9c044;
+}
+
+#contactHeading {
+  color: #f9a825;
+  margin-top: 0;
+}
+
+.rounded-input {
+  border-radius: 5px;
+}
+
+.rounded-button {
+  border-radius: 5px;
+}
