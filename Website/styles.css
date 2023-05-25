@@ -1,97 +1,116 @@
-  body {
-    background-color: #1a1a1a;
-    color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #top-bar {
-    background: linear-gradient(90deg, #f9a825, #f9c044);
-    height: 60px;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    box-shadow: 0px 0px 10px rgba(249, 168, 37, 0.5);
-  }
-  
-  #top-bar h1 {
-    color: #1a1a1a;
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-  
-  form {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #333;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  }
-  
-  label {
-    display: block;
-    margin-top: 20px;
-  }
-  
-  input, textarea {
-    width: calc(100% - 20px); /* subtract padding */
-    padding: 10px;
-    margin-top: 5px;
-    border: none;
-    background-color: #444;
-    color: #f0f0f0;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    resize: none; /* disable resizing for textarea */
-  }
-  
-  button {
-    display: block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: none;
-    background: linear-gradient(90deg, #f9a825, #f9c044);
-    color: #1a1a1a;
-    cursor: pointer;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(249, 168, 37, 0.5);
-  }
-  
-  button:hover {
-    background: linear-gradient(90deg, #f9c044, #f9a825);
-  }
+body {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-  img#imagePreview {
-    max-width: calc(100% - 40px); /* subtract padding */
-    height: auto;
-    display: block;
-    margin-top: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  }
+#top-bar {
+  background: linear-gradient(90deg, #f9a825, #f9c044);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0px 0px 10px rgba(249, 168, 37, 0.5);
+}
 
-  #top-bar {
-  justify-content: space-between; /* align items to the start and end of the bar */
-  }
+#top-bar h1 {
+  color: #1a1a1a;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
 
-  #priceInfo {
-    color: #ffffff;
-    text-align: center; /* center the text */
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(249, 168, 37, 0.5);
-    margin-left: 10px;
-  }
+label {
+  display: block;
+  margin-top: 20px;
+}
 
-  #conversionInfoBox {
-    max-width: 600px;
-    margin: 10px auto;
-    padding: 20px;
-    background-color: #333;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  }
-  
+input, textarea {
+  width: calc(100% - 20px); /* subtract padding */
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  background-color: #444;
+  color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  resize: none; /* disable resizing for textarea */
+}
+
+button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: linear-gradient(90deg, #f9a825, #f9c044);
+  color: #1a1a1a;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(249, 168, 37, 0.5);
+}
+
+button:hover {
+  background: linear-gradient(90deg, #f9c044, #f9a825);
+}
+
+img#imagePreview {
+  max-width: calc(100% - 40px); /* subtract padding */
+  height: auto;
+  display: block;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#priceInfo {
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(249, 168, 37, 0.5);
+  margin-left: 10px;
+}
+
+#conversionInfoBox {
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Additional styles for the login and register buttons */
+
+#loginRegisterButtons {
+  display: flex;
+  align-items: center;
+}
+
+#loginButton,
+#registerButton {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  background: linear-gradient(90deg, #f9a825, #f9c044);
+  color: #1a1a1a;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(249, 168, 37, 0.5);
+}
+
+#loginButton:hover,
+#registerButton:hover {
+  background: linear-gradient(90deg, #f9c044, #f9a825);
+}
