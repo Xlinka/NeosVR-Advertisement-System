@@ -14,7 +14,6 @@
       <button id="connectButton">Connect</button>
     </div>
   </header>
-
   <main>
     <section id="conversionInfoBox" class="centerSection" aria-label="NCR Price Info">
       <p id="priceInfo"></p> <!-- Element to display the price and rate -->
@@ -31,7 +30,10 @@
         <img id="imagePreview" src="" alt="Image Preview" style="display: none;"><br>
         <label for="adDuration">Advertisement Duration (in hours):</label>
         <input type="number" id="adDuration" name="adDuration" required>
-        <p id="ncrInfo"></p> <!-- Element to display the calculated NCR amount -->
+        <div class="tickbox-container">
+          <input type="checkbox" id="nsfwCheckbox" name="nsfwCheckbox" style="display: none;">
+          <label class="tickbox-label" for="nsfwCheckbox"></label>
+        </div>
         <button type="button" id="submitPayment">Submit Payment</button>
       </form>
     </section>
@@ -43,7 +45,6 @@
     </nav>
     <p>&copy; 2023 NeosVR Advertisement System. All rights reserved.</p>
   </footer>
-
   <script src="https://c0f4f41c-2f55-4863-921b-sdk-docs.github.io/cdn/metamask-sdk.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
   <script src="script.js"></script>

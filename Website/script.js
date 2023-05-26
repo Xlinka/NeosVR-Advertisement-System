@@ -139,4 +139,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   })
   .catch(error => console.error('Error:', error));
 
+  const nsfwCheckbox = document.getElementById('nsfwCheckbox');
+  nsfwCheckbox.addEventListener('change', () => {
+    nsfwCheckbox.nextSibling.nextSibling.style.opacity = nsfwCheckbox.checked ? '1' : '0';
+  });
   
